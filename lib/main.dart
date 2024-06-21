@@ -1,4 +1,4 @@
-import 'package:course_app/view/home_screen/home.dart';
+import 'package:course_app/view/bottom_nav_bar/custom_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const navPage(),
     );
   }
 }
