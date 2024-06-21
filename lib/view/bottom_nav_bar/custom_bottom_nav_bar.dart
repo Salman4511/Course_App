@@ -2,7 +2,6 @@ import 'package:course_app/view/home_screen/home.dart';
 import 'package:flutter/material.dart';
 import 'package:molten_navigationbar_flutter/molten_navigationbar_flutter.dart';
 
-
 class navPage extends StatefulWidget {
   const navPage({super.key});
 
@@ -17,7 +16,6 @@ class _navPageState extends State<navPage> {
 
   final List<Widget> _pages = [
     const HomeScreen(),
-    
   ];
   @override
   void initState() {
@@ -32,7 +30,7 @@ class _navPageState extends State<navPage> {
       theme: Theme.of(context).copyWith(
         // primaryColor: Colors.deepPurple[400],
         colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.brown,
+          primarySwatch: Colors.blue,
           cardColor: Colors.grey.shade200,
         ),
       ),
@@ -64,37 +62,41 @@ class _navPageState extends State<navPage> {
               });
               _pageController.animateToPage(
                 clickedIndex,
-                duration: Duration(milliseconds: 300),
+                duration: const Duration(milliseconds: 300),
                 curve: Curves.ease,
               );
             },
             // ansert as many tabs as you like
             tabs: [
               MoltenTab(
-                icon: Icon(
+                icon: const Icon(
                   Icons.home,
                   size: 35,
                 ),
               ),
               MoltenTab(
-                icon: Icon(
+                icon: const Icon(
                   Icons.book,
                   size: 35,
                 ),
                 // title: Text('home'),
               ),
               MoltenTab(
-                icon: Icon(
-                  Icons.beenhere_sharp,color: Colors.yellow,
+                icon: const Icon(
+                  Icons.beenhere_sharp,
+                  color: Colors.yellow,
                   size: 35,
                 ),
               ),
               MoltenTab(
-                icon: Icon(Icons.library_books_outlined, size: 30,),
+                icon: const Icon(
+                  Icons.library_books_outlined,
+                  size: 30,
+                ),
                 // title: Text('home'),
               ),
               MoltenTab(
-                icon: Icon(
+                icon: const Icon(
                   Icons.person,
                   size: 35,
                 ),
